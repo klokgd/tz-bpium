@@ -1,5 +1,5 @@
 import express from "express";
-import {statusRoute} from "./routes/statusRoutes.js";
+import {statusRoute} from "./routes/orderRoutes.js";
 import bodyParser from "body-parser";
 
 const PORT = 3000;
