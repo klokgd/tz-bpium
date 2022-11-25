@@ -16,7 +16,7 @@ router.post("/status-change", async (req, res, next) => {
         }
     }
     await updateRecord(data, catalogIdOrder, recordId)
-    res.status(200);
+    res.status(200).end();
 })
 
 router.post("/new-order", async (req,res,next)=>{
@@ -35,6 +35,7 @@ router.post("/new-order", async (req,res,next)=>{
         }
     }
     await newRecord(newRecordInStock, catalogIdStock);
+    res.status(200).end();
 })
 
 export const statusRoute = router;
